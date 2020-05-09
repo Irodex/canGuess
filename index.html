@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <script type = "text/javascript" src = "phaser.min.js"></script>
+    <title>Pictionary</title>
+</head>
+<body>
+<h1 class= "animated fadeInLeftBig">canGuess</h1>
+
+<div id ="welcomeScreen" class= "animated lightSpeedIn">
+    <h3>Enter your name </h3>
+     <form id = "nameForm">
+         <label for="userName">
+            
+        <input type= "text" id="userName">
+        </label>
+         <input type="submit" onclick="saveUserName()" value="Play">
+</div>
+
+<canvas id="canvas" width="300" height="300" class="hidden"></canvas>
+
+    </form>
+    <div id="gameScreen" class="hidden">
+        <div id="guesses"></div>
+        <br/>
+        <form id = gameForm class="color">
+            <br/>
+            <label for="userInput">
+                <input type= "text" id="userInput">
+            </label>
+            <input type = "submit" value="Guess">
+        </form> <br/>
+    
+</div>
+<script src="index.js"></script>
+</body>
+</html>
